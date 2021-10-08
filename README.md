@@ -33,3 +33,10 @@ python3 prep.py -s=1
 ```
 
 These commands will download the reddit dataset and output them into the test/data directory. If you want to download other datasets, uncomment the corresponding lines at the end of `prep.py` and run our script as above. Note that this script requires an installation of dgl, ogb and some other python packages.
+
+Finally, to run our code on the reddit dataset, use the following line from the root directory of our repository:
+```
+build/src/mg_gcn -P 4 -R 1 train test/data/permuted/reddit/ 3 128 128 128
+```
+
+`-P` is for the number of GPUS, 3 128 128 128 denotes the number of hidden layers and their dimensions.
