@@ -306,7 +306,7 @@ if __name__ == "__main__":
 	if args.communication:
 		compute_comm(args)
 	else:
-		# serialize_dgl_dataset(RedditDataset())
+		serialize_dgl_dataset(RedditDataset())
 		# serialize_dgl_dataset(CoraGraphDataset())
 		# serialize_ogb_dataset('ogbn-arxiv')
 		# serialize_ogb_dataset('ogbn-products')
