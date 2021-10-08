@@ -1,6 +1,8 @@
 # MG-GCN
 
-Created for the MLSYS submission of the MG-GCN, multi-GPU GCN training framework,
+Created for the MLSYS submission of the MG-GCN, multi-GPU GCN training framework.
+
+After cloning our repository, run `git submodule init --update` to download the submodules.
 
 Our software depends on a recent CUDA installation, tested on CUDA 11.4
 
