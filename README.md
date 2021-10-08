@@ -24,3 +24,12 @@ cd build
 cmake ..
 make -j
 ```
+
+To download and preprocess the datasets used in our experiments, first change directory into `test/data`. Then run `prep.py` as follows:
+```
+cd test/data
+python3 prep.py -s=0
+python3 prep.py -s=1
+```
+
+These commands will download the reddit dataset and output them into the test/data directory. If you want to download other datasets, uncomment the corresponding lines at the end of `prep.py` and run our script as above. Note that this script requires an installation of dgl, ogb and some other python packages.
