@@ -30,6 +30,7 @@ make -j
 To download and preprocess the datasets used in our experiments, first change directory into `test/data`. Then run `prep.py` as follows:
 ```
 cd test/data
+mkdir permuted
 python3 prep.py -s=0
 python3 prep.py -s=1
 ```
